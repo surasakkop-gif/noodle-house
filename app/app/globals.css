@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf2;
+  color: #34251c;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #ffffff;
+  border-bottom: 1px solid #eee1d3;
+}
+
+.header h1 {
+  color: #d65a24;
+  font-size: 25px;
+}
+
+.header a {
+  color: #34251c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #fce6c9;
+}
+
+.hero p:first-child {
+  color: #b84b20;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+.shop-button {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #d65a24;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 4px 18px #00000010;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  margin: 10px 0;
+  color: #76665b;
+}
+
+.product-card h3 {
+  margin: 12px 0;
+  font-size: 23px;
+}
+
+.product-card strong {
+  display: block;
+  margin: 18px 0;
+  color: #d65a24;
+  font-size: 20px;
+}
+
+.product-card button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 25px;
+  background: #d65a24;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #a83d16;
+}
+
+.cart {
+  background: white;
+  padding: 35px 8%;
+  text-align: center;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart p {
+  margin: 12px;
+}
+
+.cart h3 {
+  margin-top: 20px;
+  color: #d65a24;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #34251c;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 18px 5%;
+  }
+}
